@@ -1,0 +1,39 @@
+% Finished mode.
+% \documentclass[nocolor]{article}
+\documentclass{article}
+
+% Draft mode.
+% \documentclass[working,nocolor]{article}
+% \documentclass[working]{article}
+
+\input{preamble.tex}
+
+\usepackage{lipsum} % For random text. You don't need this.
+
+
+\title{My Handbook of Quantitative Tools and Methods for Computation}
+\author{Brian Howell}
+\date{\today}
+
+\newcommand{\linktootherpages}{link}
+\newcommand{\shortlinkname}{link}
+\newcommand{\term}{v1.0.0}
+\newcommand{\academicyear}{$2022$}
+\newcommand{\faculty}{University of California, Berkeley}
+
+\begin{document}
+\createintro
+
+% start sections
+\input{sections/readings.tex}
+\input{sections/math.tex}
+\input{sections/optimization.tex}
+\input{sections/ml.tex}
+\input{sections/computing.tex}
+% end sections
+
+\input{lectures/lec-01.tex}
+
+
+\listnotes
+\end{document}
